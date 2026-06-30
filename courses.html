@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Courses - Opian Academy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline-variant": "#c6c6cd",
+                        "primary-fixed-dim": "#bec6e0",
+                        "on-surface": "#0b1c30",
+                        "tertiary-fixed": "#ffe083",
+                        "on-secondary-fixed-variant": "#004395",
+                        "secondary-container": "#2170e4",
+                        "surface-container": "#e5eeff",
+                        "surface-container-low": "#eff4ff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "secondary-fixed-dim": "#adc6ff",
+                        "on-tertiary-container": "#4e3e00",
+                        "on-secondary-fixed": "#001a42",
+                        "primary-fixed": "#dae2fd",
+                        "primary": "#000000",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#565e74",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#131b2e",
+                        "surface-bright": "#f8f9ff",
+                        "surface-dim": "#cbdbf5",
+                        "outline": "#76777d",
+                        "on-error": "#ffffff",
+                        "background": "#f8f9ff",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "on-surface-variant": "#45464d",
+                        "error": "#ba1a1a",
+                        "on-background": "#0b1c30",
+                        "inverse-surface": "#213145",
+                        "on-tertiary-fixed": "#231b00",
+                        "secondary-fixed": "#d8e2ff",
+                        "surface-variant": "#d3e4fe",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "tertiary-container": "#cea700",
+                        "inverse-primary": "#bec6e0",
+                        "surface": "#f8f9ff",
+                        "on-primary-container": "#7c839b",
+                        "surface-container-highest": "#d3e4fe",
+                        "secondary": "#0058be",
+                        "primary-container": "#131b2e",
+                        "surface-container-high": "#dce9ff",
+                        "tertiary-fixed-dim": "#eec200",
+                        "on-secondary-container": "#fefcff",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#735c00",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "gutter": "24px",
+                        "xs": "4px",
+                        "xl": "48px",
+                        "sm": "8px",
+                        "base": "4px",
+                        "md": "16px",
+                        "lg": "24px",
+                        "container-max": "1280px"
+                    },
+                    fontFamily: {
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "display-lg-mobile": ["Inter"],
+                        "label-md": ["Inter"]
+                    },
+                    fontSize: {
+                        "label-sm": ["12px", { lineHeight: "16px", fontWeight: "600" }],
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "headline-md": ["30px", { lineHeight: "38px", letterSpacing: "-0.01em", fontWeight: "600" }],
+                        "headline-sm": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+                        "display-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "display-lg-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopNavBar Component -->
+<nav class="bg-surface dark:bg-on-primary-fixed w-full top-0 sticky border-b border-outline-variant dark:border-on-primary-fixed-variant z-50">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<div class="flex items-center gap-lg">
+<a class="text-headline-sm font-headline-sm font-black text-on-surface dark:text-surface-bright" href="#">Opian Academy</a>
+<div class="hidden md:flex items-center gap-md">
+<a class="text-on-surface-variant dark:text-primary-fixed-dim font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 cursor-pointer active:opacity-80 transition-opacity" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-primary-fixed-dim font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 cursor-pointer active:opacity-80 transition-opacity" href="#">About</a>
+<a class="text-secondary dark:text-secondary-fixed font-bold border-b-2 border-secondary dark:border-secondary-fixed pb-1 hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 cursor-pointer active:opacity-80 transition-opacity" href="#">Courses</a>
+<a class="text-on-surface-variant dark:text-primary-fixed-dim font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 cursor-pointer active:opacity-80 transition-opacity" href="#">YouTube</a>
+<a class="text-on-surface-variant dark:text-primary-fixed-dim font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 cursor-pointer active:opacity-80 transition-opacity" href="#">Notes</a>
+<a class="text-on-surface-variant dark:text-primary-fixed-dim font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 cursor-pointer active:opacity-80 transition-opacity" href="#">Contact</a>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<div class="relative hidden lg:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline" data-icon="search">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-lowest border border-outline-variant rounded-lg focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none text-body-md font-body-md transition-all" placeholder="Search courses..." type="text"/>
+</div>
+<button class="bg-primary text-on-primary px-lg py-2 rounded-lg text-label-md font-label-md hover:opacity-90 transition-opacity">Enroll Now</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow px-gutter max-w-container-max mx-auto w-full py-xl">
+<!-- Header & Filters -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-xl gap-lg">
+<div>
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg-mobile md:font-display-lg mb-sm">Course Catalog</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">Discover rigorous, university-level curricula designed to elevate your intellectual capabilities. Select a discipline below to begin.</p>
+</div>
+<div class="flex flex-wrap gap-sm">
+<button class="px-md py-2 bg-secondary text-on-secondary rounded-full text-label-sm font-label-sm shadow-sm transition-transform hover:scale-105 active:scale-95">All Disciplines</button>
+<button class="px-md py-2 bg-surface-container-lowest border border-outline-variant text-on-surface-variant rounded-full text-label-sm font-label-sm hover:border-secondary transition-colors">Science</button>
+<button class="px-md py-2 bg-surface-container-lowest border border-outline-variant text-on-surface-variant rounded-full text-label-sm font-label-sm hover:border-secondary transition-colors">Mathematics</button>
+<button class="px-md py-2 bg-surface-container-lowest border border-outline-variant text-on-surface-variant rounded-full text-label-sm font-label-sm hover:border-secondary transition-colors">Technology</button>
+<button class="px-md py-2 bg-surface-container-lowest border border-outline-variant text-on-surface-variant rounded-full text-label-sm font-label-sm hover:border-secondary transition-colors">Humanities</button>
+</div>
+</div>
+<!-- Course Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden group hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all duration-300 flex flex-col">
+<div class="h-48 relative overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A highly detailed macro photograph of a complex molecular structure model, illuminated by crisp white laboratory lighting. The background is a clean, minimal light gray, emphasizing the intricate geometry of the science concept. A perfect visual for an advanced physics or chemistry course, reflecting academic precision and a modern, light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVezGh-_VrRVs7an3wktlxZdTTs6vLtJ9GkChJzT48P7aIFeh4DUj-KdcNVYLbMgy7zmUsRxjObGLRmRUXn2QHTYazZyFIs-wG1F3JEVhmek3CWUSFTxV_t7z4Yg3X6ECTjYREEnQ8ZFanZBc_MDAmI6wsA0Bpb8elAR-mGX2GQLtyh2IoR-oECewGMFCIvQs-5rTcWpVfGTrkaCwG7UaxvY9JOfDMEQFHDNa-IcVVPgQh0sr4pcAL8KZVaVom7qUUnGfQVAEfqA"/>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-sm px-sm py-xs rounded text-label-sm font-label-sm text-on-surface">Science</div>
+</div>
+<div class="p-lg flex flex-col flex-grow">
+<h3 class="text-headline-sm font-headline-sm mb-xs">Advanced Quantum Mechanics</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-md flex-grow">A rigorous exploration of non-relativistic quantum theory, wave mechanics, and matrix formulations.</p>
+<div class="flex items-center gap-sm mb-md">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="A professional headshot of a distinguished academic professor with silver hair and glasses, wearing a tailored navy blazer against a plain white background. Shot with soft, even studio lighting to convey authority and approachability in a light-mode educational context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC48DTAULRLDDme-gWcn7hfsQy2z7gj0DkNxxy4GZvaQd-Gs8n6tKoWSkcDpe-OKVPQZ8k6rFNyhZyHTSTL97Xi2LuC_5qJF7kBFeU4kP3ETXySXOO3Mx-fItWpk86NiVBPHOTEh_cdQFgPIEM_XG3n-yKbR5P5Xg-FVZtWy8k8BDo4qY8F7Rc8Dw0Jp-Uw6Mt8GXWotgkTZIqT3bgEum7CDwhu9heZD5jscuzHPSkEFVyoy6zg0Q8Hy3lNSBHTjbw6Z8-BYwDjww"/>
+<span class="text-label-md font-label-md text-on-surface-variant">Dr. E. Schrödinger</span>
+</div>
+<div class="flex justify-between items-center pt-md border-t border-outline-variant">
+<div class="flex items-center gap-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="schedule">schedule</span>
+<span class="text-label-sm font-label-sm">12 Weeks</span>
+</div>
+<span class="text-headline-sm font-headline-sm font-bold">$1,200</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden group hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all duration-300 flex flex-col">
+<div class="h-48 relative overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A pristine, minimalist architectural photograph showing intersecting white planes and subtle shadows, forming a complex geometric pattern. The light is bright and diffused, creating a serene, highly structured visual environment that perfectly represents abstract mathematics and topology in a high-end academic setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHWAm193Zyt6QJoiNf-AiCOfXiAcgg1bHYhmnyHg3P53OerhDgbEUoutcO6MAjaBP3JiQTLIl1P7JfLX3XEhPxPIjz4sqf8OzM3H2DiVi6dSS8Df_S5jK5swj2oSt5eQj2ecq8aQVKi3-_okyQ40H92YJUBN1bTOYb98gpQsf42XAdRERunhoU2k50HAXXbfORdWnQLSTw3l_DU0drfhMZb-YzvBFSL62UUzCsRgsfOHdb3Ont81lUz1xfdtbpU3ZrE717xoccQA"/>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-sm px-sm py-xs rounded text-label-sm font-label-sm text-on-surface">Mathematics</div>
+</div>
+<div class="p-lg flex flex-col flex-grow">
+<h3 class="text-headline-sm font-headline-sm mb-xs">Abstract Algebra &amp; Topology</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-md flex-grow">An in-depth study of group theory, rings, fields, and topological spaces for advanced theoreticians.</p>
+<div class="flex items-center gap-sm mb-md">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="A professional portrait of a young female mathematician in a well-lit modern university office. She is wearing a crisp white collared shirt. The background is a slightly blurred whiteboard with neat equations, emphasizing a clean, bright, and intellectual light-mode atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA76gY3VAS5Nahn8FZzW8M-_VdO8DWNtntL-fZVd4-l1_VDJlzyPOPtcVyrEA2dcLKGOUWTrZNMmws2tuAgC6WmszKAtpquzJRTC6qYqIrpBrJes1tO6RmP6OtPUnk7l77g7bfA7MLcpqZtCPUIIw9yIdz_ntlSdwyocK9UY3AnMblTvyaPDa2bELbDlkcL4OZBJnIUeMR7n67umKCOZiwTaDpwjEnEyEAyv_Yq3tVBzaQZUuG31ygzhL766sY7hlQB-ZYcV4EXRg"/>
+<span class="text-label-md font-label-md text-on-surface-variant">Prof. A. Noether</span>
+</div>
+<div class="flex justify-between items-center pt-md border-t border-outline-variant">
+<div class="flex items-center gap-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="schedule">schedule</span>
+<span class="text-label-sm font-label-sm">10 Weeks</span>
+</div>
+<span class="text-headline-sm font-headline-sm font-bold">$950</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden group hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all duration-300 flex flex-col">
+<div class="h-48 relative overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A macro shot of a high-end silicon wafer or microchip, bathed in clean, bright studio lighting. The intricate circuitry lines are rendered in sharp focus against a minimal, pale background. This image conveys cutting-edge technology, computational precision, and a modern corporate academic aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV4NCXVEClwOk8ioRb3kXYTmcy9C2lHlKuAGtMW-OCSgqHkpAiltJzLFYBU52SVCRAqK0jq-CI_RD5wAYFGmsHyo8rTbCKKnZHZLgIbOjGjVodt4dDchpf-QG8gO_16M7QmUWhV_sx8JxzTBG5axOectICAl3Rj_6LnZ9UDleCD1NuHrhvwulBgsqGCKCuQ199KwMJnpZZcC-8fQA2A6bmCb-Hhf9fo_jaxtDBNhGzDeBKS3SGq9FpbA-SZzD_e8WYN2k0YN-qNQ"/>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-sm px-sm py-xs rounded text-label-sm font-label-sm text-on-surface">Technology</div>
+</div>
+<div class="p-lg flex flex-col flex-grow">
+<h3 class="text-headline-sm font-headline-sm mb-xs">Systems Architecture Design</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-md flex-grow">Principles of designing scalable, robust computational systems and distributed networks.</p>
+<div class="flex items-center gap-sm mb-md">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="A polished headshot of a male tech professional with neat, short hair, wearing a dark gray structured turtleneck. The background is a pure, bright white, highlighting his sharp features and conveying authority in computer science within a minimalist design system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAruPdMQSyPP2sWLU6YJpNiHhbfHKvZGwF_BeSWLPslSvL6Q8aH9yZBmhnxxsefWoA1AsSoxvi0ypM1mJJ5OdWSljjiKCwCJCdYWSu2B4IpwlZdzzwe2J3X5rHQl5O4A1bX6XkR1Mc4V4DRhpy2KawZNO2TGmtTNZ9zOi1VL1_3_Hvn7jQstDWHCcA5AI4TomWh0q4SClUn6whDa86YNN_B5-3v16W2lPmGJuH6et-umg1Sxdlbvp_82g8CyLs4vQFHiNfjPh5V7A"/>
+<span class="text-label-md font-label-md text-on-surface-variant">Dr. J. von Neumann</span>
+</div>
+<div class="flex justify-between items-center pt-md border-t border-outline-variant">
+<div class="flex items-center gap-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="schedule">schedule</span>
+<span class="text-label-sm font-label-sm">14 Weeks</span>
+</div>
+<span class="text-headline-sm font-headline-sm font-bold">$1,450</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Component -->
+<footer class="bg-surface-container-highest dark:bg-primary-container w-full mt-xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-lg px-gutter py-xl max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-2">
+<div class="text-headline-sm font-headline-sm font-bold text-on-background dark:text-surface-bright mb-md">Opian Academy</div>
+<p class="text-body-md font-body-md text-on-surface-variant dark:text-outline-variant max-w-sm mb-md">Dedicated to providing rigorous, high-quality educational resources for the modern professional.</p>
+<div class="text-label-sm font-label-sm text-on-surface-variant dark:text-outline-variant">© 2024 Opian Academy. All rights reserved.</div>
+</div>
+<div>
+<h4 class="text-label-md font-label-md font-bold mb-md">Links</h4>
+<ul class="space-y-sm">
+<li><a class="text-body-md font-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary underline transition-all duration-200" href="#">Contact Us</a></li>
+<li><a class="text-body-md font-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary underline transition-all duration-200" href="#">Privacy Policy</a></li>
+<li><a class="text-body-md font-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary underline transition-all duration-200" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-label-md font-label-md font-bold mb-md">Connect</h4>
+<ul class="space-y-sm">
+<li><a class="text-body-md font-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary underline transition-all duration-200" href="#">YouTube</a></li>
+<li><a class="text-body-md font-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary underline transition-all duration-200" href="#">Notes</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>
