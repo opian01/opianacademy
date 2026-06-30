@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About - Opian Academy</title>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#c6c6cd",
+                        "primary-fixed-dim": "#bec6e0",
+                        "on-surface": "#0b1c30",
+                        "tertiary-fixed": "#ffe083",
+                        "on-secondary-fixed-variant": "#004395",
+                        "secondary-container": "#2170e4",
+                        "surface-container": "#e5eeff",
+                        "surface-container-low": "#eff4ff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "secondary-fixed-dim": "#adc6ff",
+                        "on-tertiary-container": "#4e3e00",
+                        "on-secondary-fixed": "#001a42",
+                        "primary-fixed": "#dae2fd",
+                        "primary": "#000000",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#565e74",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#131b2e",
+                        "surface-bright": "#f8f9ff",
+                        "surface-dim": "#cbdbf5",
+                        "outline": "#76777d",
+                        "on-error": "#ffffff",
+                        "background": "#f8f9ff",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "on-surface-variant": "#45464d",
+                        "error": "#ba1a1a",
+                        "on-background": "#0b1c30",
+                        "inverse-surface": "#213145",
+                        "on-tertiary-fixed": "#231b00",
+                        "secondary-fixed": "#d8e2ff",
+                        "surface-variant": "#d3e4fe",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "tertiary-container": "#cea700",
+                        "inverse-primary": "#bec6e0",
+                        "surface": "#f8f9ff",
+                        "on-primary-container": "#7c839b",
+                        "surface-container-highest": "#d3e4fe",
+                        "secondary": "#0058be",
+                        "primary-container": "#131b2e",
+                        "surface-container-high": "#dce9ff",
+                        "tertiary-fixed-dim": "#eec200",
+                        "on-secondary-container": "#fefcff",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#735c00",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "xs": "4px",
+                        "xl": "48px",
+                        "sm": "8px",
+                        "base": "4px",
+                        "md": "16px",
+                        "lg": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "display-lg-mobile": ["Inter"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky bg-surface border-b border-outline-variant z-50">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<!-- Brand -->
+<a class="text-headline-sm font-headline-sm font-black text-on-surface tracking-tight" href="#">
+                Opian Academy
+            </a>
+<!-- Desktop Navigation -->
+<ul class="hidden md:flex items-center gap-lg">
+<li>
+<a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 cursor-pointer active:opacity-80" href="#">Home</a>
+</li>
+<li>
+<a class="text-label-md font-label-md text-secondary font-bold border-b-2 border-secondary pb-1 hover:text-secondary transition-colors duration-200 cursor-pointer active:opacity-80" href="#">About</a>
+</li>
+<li>
+<a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 cursor-pointer active:opacity-80" href="#">Courses</a>
+</li>
+<li>
+<a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 cursor-pointer active:opacity-80" href="#">YouTube</a>
+</li>
+<li>
+<a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 cursor-pointer active:opacity-80" href="#">Notes</a>
+</li>
+<li>
+<a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 cursor-pointer active:opacity-80" href="#">Contact</a>
+</li>
+</ul>
+<!-- Trailing Action -->
+<div class="hidden md:flex items-center">
+<button class="bg-[#0F172A] text-on-primary text-label-md font-label-md px-lg py-sm rounded-lg hover:opacity-90 transition-opacity">
+                    Enroll Now
+                </button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface flex items-center justify-center p-sm">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section: Mission -->
+<section class="py-xl md:py-24 px-gutter max-w-container-max mx-auto flex flex-col items-center text-center">
+<span class="text-label-md font-label-md text-secondary uppercase tracking-widest mb-lg">Our Mission</span>
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg-mobile md:font-display-lg text-on-surface max-w-4xl leading-tight mb-lg">
+                Democratizing high-quality, rigorous education for the modern professional.
+            </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">
+                We believe that access to foundational knowledge and advanced technical proficiency should not be gated. Opian Academy exists to provide structured, authoritative learning environments that foster genuine intellectual growth and practical mastery.
+            </p>
+</section>
+<!-- Our Philosophy: Asymmetric Bento Grid -->
+<section class="py-xl bg-surface-container-low border-y border-outline-variant">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-xl gap-md">
+<div>
+<h2 class="text-headline-md font-headline-md text-on-surface">Our Philosophy</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-sm max-w-lg">
+                            The architecture of modern learning demands clarity, minimal friction, and an unwavering focus on substance over spectacle.
+                        </p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-lg auto-rows-[minmax(200px,auto)]">
+<!-- Large Feature Card -->
+<div class="md:col-span-8 bg-surface-container-lowest border border-outline-variant rounded-lg p-xl flex flex-col justify-between overflow-hidden relative group">
+<div class="absolute inset-0 bg-gradient-to-br from-surface-bright to-surface-variant opacity-50 pointer-events-none"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-secondary text-[32px] mb-md" data-icon="architecture">architecture</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-sm">Structured Progress</h3>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-md">
+                                Learning is an architectural endeavor. We build foundations first, ensuring every advanced concept is supported by an unbreakable understanding of first principles.
+                            </p>
+</div>
+</div>
+<!-- Small Feature Card 1 -->
+<div class="md:col-span-4 bg-surface-container-lowest border border-outline-variant rounded-lg p-lg flex flex-col justify-center">
+<span class="material-symbols-outlined text-on-surface mb-md" data-icon="noise_aware">noise_aware</span>
+<h3 class="text-label-md font-label-md font-bold text-on-surface mb-xs">Signal over Noise</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                            We strip away decorative elements and tangential information to focus entirely on actionable, core knowledge.
+                        </p>
+</div>
+<!-- Small Feature Card 2 -->
+<div class="md:col-span-4 bg-[#0F172A] border border-[#1E293B] rounded-lg p-lg flex flex-col justify-center">
+<span class="material-symbols-outlined text-primary-fixed mb-md" data-icon="terminal">terminal</span>
+<h3 class="text-label-md font-label-md font-bold text-on-primary mb-xs">Technical Proficiency</h3>
+<p class="text-body-md font-body-md text-primary-fixed-dim">
+                            Theory without execution is fragile. Our curriculum demands hands-on application and rigorous testing.
+                        </p>
+</div>
+<!-- Image/Visual Card -->
+<div class="md:col-span-8 bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden relative min-h-[300px]">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Abstract architectural photography showing clean lines and bright, diffused light in a modern academic building. Represents clarity, structure, and modern learning environments. Soft white, deep navy, and slate blue tones. High resolution, minimalist composition, emphasizing depth and intellectual authority." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC5UAHnwqnwi46hVnAhaSWObxX3mQlbx5NY3RWL55ZxwsKLRc_GDRAzb9xu6iYK2Ux5Xfg1JXqRr9a_CoQJffWbsW6cqfrECDBXzi1g0v42M7Taom86HmP-muK4kqfpzYP7n7zW7ZV5uZNT3BhjiC6_vUnSp6NOhs4BN9jGcE2AN9iHLmdOwH66jUlQhc2izklL9_Ge97ZgPpIxL8pYGifYd7KEOwkERxNavWuLK7rr53S6xegFEyTrbvepjyIW5MJXtXnkb30mMQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/80 to-transparent flex items-end p-lg">
+<p class="text-on-primary text-body-lg font-body-lg font-medium">Clarity through design.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Story (Timeline) -->
+<section class="py-xl md:py-24 max-w-3xl mx-auto px-gutter">
+<h2 class="text-headline-md font-headline-md text-on-surface text-center mb-xl">Our Story</h2>
+<div class="relative border-l border-outline-variant ml-3 md:ml-6 space-y-xl">
+<!-- Timeline Item 1 -->
+<div class="relative pl-lg">
+<div class="absolute w-3 h-3 bg-secondary rounded-full -left-[6.5px] top-2 ring-4 ring-surface"></div>
+<span class="text-label-sm font-label-sm text-secondary tracking-wider mb-xs block">2018</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-sm">The Foundation</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                        Opian Academy began as a series of highly specialized, invite-only technical seminars aimed at bridging the gap between academic theory and industry engineering standards.
+                    </p>
+</div>
+<!-- Timeline Item 2 -->
+<div class="relative pl-lg">
+<div class="absolute w-3 h-3 bg-surface-variant border border-outline-variant rounded-full -left-[6.5px] top-2 ring-4 ring-surface"></div>
+<span class="text-label-sm font-label-sm text-on-surface-variant tracking-wider mb-xs block">2020</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-sm">Digital Expansion</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                        Recognizing a broader need, we transitioned our rigorous curriculum to a digital platform, maintaining the high standards of our in-person seminars while democratizing access.
+                    </p>
+</div>
+<!-- Timeline Item 3 -->
+<div class="relative pl-lg">
+<div class="absolute w-3 h-3 bg-surface-variant border border-outline-variant rounded-full -left-[6.5px] top-2 ring-4 ring-surface"></div>
+<span class="text-label-sm font-label-sm text-on-surface-variant tracking-wider mb-xs block">2024</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-sm">The Modern Academy</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                        Today, Opian serves thousands of professionals globally, offering a comprehensive suite of courses, comprehensive notes, and open-source video lectures.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Meet Our Faculty -->
+<section class="py-xl bg-surface-container-low border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-xl">
+<h2 class="text-headline-md font-headline-md text-on-surface mb-sm">Meet Our Faculty</h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-2xl mx-auto">
+                        Our instructors are active industry practitioners and rigorous academics. They bring undeniable expertise and a commitment to clear, structured pedagogy.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-lg">
+<!-- Faculty Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden group hover:shadow-[0px_4px_12px_rgba(15,23,42,0.05)] transition-shadow duration-300">
+<div class="aspect-square relative overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Professional headshot of a female academic professor in a modern, bright office setting. High-contrast lighting, modern corporate aesthetic. She is wearing a structured navy blazer. Clean background with subtle architectural lines indicating an academic institution. Light mode UI context, sharp focus, authoritative but approachable expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu8wlIa88kvZrdNfKa_RQxSwtM7ehi6OrqCC-GiTrAmbhJSwR2fAdNcM8XWhdcN0zxlJDHul3_bcsYLTe0R7LXywp0aqichsygVVkcZvLC8Vo1QkBnSFSDee2_OvuW4A6W7bM3GvGUP34shmUI-uKb9HmUJRLKaEAwmkjTGLgrbwWQfqd-6R5ythWZf_xXXMZxYs5vFM5mOPHPWQo7Vrz50xiBuW53b2u7-aNLeIhv6gfK4fLQitIi6HsD16fI6OUQSledxB-Alw"/>
+</div>
+<div class="p-lg">
+<h3 class="text-label-md font-label-md font-bold text-on-surface">Dr. Elena Rostova</h3>
+<p class="text-label-sm font-label-sm text-secondary mb-md">Lead of Computer Science</p>
+<p class="text-body-md font-body-md text-on-surface-variant text-sm">
+                                Former principal engineer with a focus on distributed systems and rigorous software architecture.
+                            </p>
+</div>
+</div>
+<!-- Faculty Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden group hover:shadow-[0px_4px_12px_rgba(15,23,42,0.05)] transition-shadow duration-300">
+<div class="aspect-square relative overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Professional headshot of a male data scientist in a minimalist studio setting. High-contrast, cool-toned lighting. Modern corporate style. Wearing a crisp white shirt and slate grey vest. Background is a soft, out-of-focus off-white wall. Serious, intellectual gaze, suitable for a technical academy website." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg8Hdx5IDL8Tf7E5at9at0cGvNCfGVbmz024Ra9qQ62UaqYOha4-t4QxZ-irFJF7q6eBsj01XjSHevjDJ7TasxvQC6Y6bX_kt_BK78DrrmIB_YoptIzlgIQPl4a_P7-VAilOhhe3HGX1VVhCy6ceAAjJQpVD72EIQA_6rhqJVjUxitf4hwCyj57y2uESxlhNKbs_QvqwpQqWpvXEvNXS_Ax7lzTznEaQ4NOB4jMWXsQXC0BzgONjNg-WmFHabad-L5qyHOQCQTFg"/>
+</div>
+<div class="p-lg">
+<h3 class="text-label-md font-label-md font-bold text-on-surface">Marcus Chen</h3>
+<p class="text-label-sm font-label-sm text-secondary mb-md">Head of Data Science</p>
+<p class="text-body-md font-body-md text-on-surface-variant text-sm">
+                                Specialist in machine learning infrastructure and statistical modeling methodologies.
+                            </p>
+</div>
+</div>
+<!-- Faculty Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden group hover:shadow-[0px_4px_12px_rgba(15,23,42,0.05)] transition-shadow duration-300">
+<div class="aspect-square relative overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Professional headshot of a female design theorist in a well-lit, modern library environment. Natural light mixed with high-end studio lighting. Wearing minimal, elegant dark clothing. The background features blurred bookshelves and clean lines. Projects intellect, clarity, and modern professionalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv_VW7j4OnF7dD-C_gHrKcjq7iqGMtlwCtoijpHhlLCPHZpgjVUrg-PnDbL3pM3GXXupVoF4j4XjAzZCp-PV7jO8bFz8rAq_ENzkBBU6er-gr43dWXpN-VsGkcIDghc8oMokr5CJbLOk8RqIyryf5HrAOBlx_nmHXbJrcWql1Y4StzLZq4do4O7IQoKUawtLlxdEjJUmvPmSxQO5dMOzEvAr3ZMsuGHru3cAnG76MU4zPuhyGFn0vlG_bbHY2M87ZBk2KX3J4x1Q"/>
+</div>
+<div class="p-lg">
+<h3 class="text-label-md font-label-md font-bold text-on-surface">Sarah Jenkins</h3>
+<p class="text-label-sm font-label-sm text-secondary mb-md">Director of UX/UI</p>
+<p class="text-body-md font-body-md text-on-surface-variant text-sm">
+                                Advocate for minimal, high-utility interfaces. Bridges cognitive psychology with digital design.
+                            </p>
+</div>
+</div>
+<!-- Faculty Card 4 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden group hover:shadow-[0px_4px_12px_rgba(15,23,42,0.05)] transition-shadow duration-300">
+<div class="aspect-square relative overflow-hidden bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[48px] text-outline-variant" data-icon="person_add">person_add</span>
+</div>
+<div class="p-lg">
+<h3 class="text-label-md font-label-md font-bold text-on-surface">Join the Faculty</h3>
+<p class="text-label-sm font-label-sm text-on-surface-variant mb-md">Open Positions</p>
+<p class="text-body-md font-body-md text-on-surface-variant text-sm mb-md">
+                                We are always looking for authoritative voices in technology and design.
+                            </p>
+<a class="text-label-md font-label-md text-secondary hover:underline flex items-center gap-xs" href="#">
+                                View Openings <span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-xl bg-surface-container-highest border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-lg px-gutter py-xl max-w-container-max mx-auto">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-1">
+<span class="text-headline-sm font-headline-sm font-bold text-on-background block mb-sm">Opian Academy</span>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                    Structured knowledge for the modern professional.
+                </p>
+</div>
+<!-- Links Columns -->
+<div class="col-span-1 md:col-span-2 grid grid-cols-2 gap-lg">
+<div>
+<ul class="space-y-sm">
+<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all duration-200" href="#">Contact Us</a></li>
+<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all duration-200" href="#">YouTube</a></li>
+<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all duration-200" href="#">Notes</a></li>
+</ul>
+</div>
+<div>
+<ul class="space-y-sm">
+<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all duration-200" href="#">Privacy Policy</a></li>
+<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all duration-200" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<!-- Copyright Column -->
+<div class="col-span-1 md:col-span-1 flex items-end md:justify-end">
+<p class="text-label-sm font-label-sm text-on-surface-variant">
+                    © 2024 Opian Academy. All rights reserved.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
